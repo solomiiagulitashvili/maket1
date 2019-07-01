@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+// font-family: 'Roboto', sans-serif;
+@mixin heading($color) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: $color;
+    font-weight: normal; 
+    strong {
+    font-weight: bold;
+    }   
+    
+}
+@mixin paragraph($color) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: $color;
+    
+    
+}

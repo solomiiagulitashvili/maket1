@@ -1,0 +1,241 @@
+@mixin background($overlay, $link) {
+    background: linear-gradient(
+       $overlay,
+       $overlay
+        ),
+        url($link) center center no-repeat;
+    background-size: cover;
+}
+body { 
+    margin: 0;
+    & > div {
+        width: 1366px;
+        height: 2290;
+    }
+}
+.section {
+    &1 {
+        display: flex;
+        flex-direction: row;
+        height: 715px;
+        
+        .about {
+            background-color: #f3f3f3;
+            height: 100%;
+            width: 460px;
+            padding-left: 55px;
+            padding-top: 55px;
+            box-sizing: border-box;
+            svg {
+                cursor: pointer;
+            }
+            h1 {
+                @include heading(black);
+                width: 270px;
+                margin-top: 80px;
+                margin-bottom: 75px;
+            }
+            p {
+                @include paragraph(black);
+                width: 335px;
+            }
+        }
+    }
+    &2 {
+        height: 860px;
+        display: flex;
+        flex-flow: column wrap;
+        .what-i-do {
+            height: 860px;
+            width: 616px;
+            @include background(rgba(30, 146, 175, 0.75), "../img/what-i-do.jpg");
+        }
+            .what-i-do h1 {
+            @include heading(white);
+            font-size: 45px !important; 
+            width: 355px;
+            margin-top: 80px;
+            margin-bottom: 50px; 
+            padding-left: 55px;
+            height: 25px;
+        }
+            .what-i-do p {
+            @include paragraph(white);
+            font-size: 16px !important;
+            width: 500px;
+            height:100px;
+            padding-left: 55px;
+            margin-bottom: 100px;
+            
+        }
+            .what-i-do h1 {
+            @include heading(white);
+            font-size: 45px !important;
+            width: 350px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding-left: 55px;
+            height: 25px;
+        }
+        .what-i-do p {
+            @include paragraph(white);
+            width: 450px;
+            padding-left: 90px;
+            height: 100px;
+            margin-bottom: 100px;
+            font-size: 16px !important;
+        }
+        .what-i-do h1 {
+            @include heading(white);
+            font-size: 45px !important;
+            width: 415px;
+            margin-top: 100px;
+            margin-bottom: 50px;
+            padding-left: 55px;
+            height: 25px;
+        }
+        .what-i-do p {
+            @include paragraph(white);
+            width: 500px;
+            height: 100px;
+            padding-left: 55px;
+            margin-bottom: 70px;
+            font-size: 16px !important;
+        }
+    .starting {
+            height: 430px;
+            width: 750px;
+            @include background(rgba(255, 244, 210, 0.91), "../img/starting.jpg");
+        }
+        .starting h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 45px;
+            color: black;
+            font-weight: normal; 
+                strong {
+            font-weight: bold;
+            }   
+            width: 295px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            padding-left: 60px;
+            height: 25px;
+            }
+        .starting p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            color: black;
+            margin: 0;                        
+            width: 545px;
+            height: 95px;
+            padding-left: 55px;
+            margin-top: 50px;
+            margin-bottom: 60px;
+         }
+        .starting .button {
+            font-family: 'Roboto' sans-serif;
+            font-weight: regular;
+            font-size: 17px;
+            text-decoration: none;
+            color:black;
+            padding: 20px 40px 20px 40px;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            border-left: 1px solid black;
+            border-radius: 10px;
+            margin-left: 55px;
+            margin-bottom: 70px;
+            margin-top: 60px;
+            }
+    .dummy {
+            height: 430px;
+            width: 750px;
+            @include background(rgba(22, 38, 51, 0.75), "../img/dummy.jpg");
+        }
+        .dummy h1 {
+            @include heading(white);
+            font-size: 45px !important;
+            width: 335px;
+            height: 25px;
+            margin-top: 80px;
+            margin-bottom: 50px;
+            padding-left: 55px;
+             }
+             .dummy p {
+                 @include paragraph(white);
+                 font-size: 16px !important;
+                 width: 545px;
+                 height: 95px;
+                 margin: 0;
+                 margin-top: 50px;
+                 margin-bottom: 60px;
+                 padding-left: 55px;
+             }
+            .button {
+                 font-family: 'Roboto' sans-serif;
+                 font-weight: regular;
+                 font-size: 17px;
+                 color: white;
+                 text-decoration: none;
+                 padding: 20px 40px 20px 40px;
+                 border-top: 1px solid white;
+                 border-right: 1px solid white;
+                 border-bottom: 1px solid white;
+                 border-left: 1px solid white;
+                 border-radius: 10px;
+                 margin-left: 55px;
+                 margin-bottom: 70px;
+                 margin-top: 60px;
+            }
+        
+    }
+    &3 {
+        display: flex;
+        flex-direction: row;
+        height: 715px;
+       .designed-by {
+           width: 460px;
+           height: 715px;
+           @include background(rgba(29, 83, 103, 0.75), "../img/designed-by.jpg")
+       }
+       .designed-by {
+           h1 {
+               @include heading(white);
+               font-size: 45px !important;
+               width: 340px;
+               height: 95px;
+               margin-top: 85px;
+               margin-left: 50px;
+               margin-bottom: 270px;
+           }
+           svg {
+            padding-left: 60px;
+            
+           
+        }
+           .name {
+               @include paragraph(white);
+               font-size: 42px !important;
+               width: 185px;
+               height: 25px;
+               padding-left: 60px;
+               margin-top: 45px;
+               margin-bottom: 35px;
+           }
+               
+        
+            .designer {
+               font-family: Roboto, sans-serif;
+               color: white;
+               font-size: 17px !important;
+               width: 135px;
+               height: 10px;
+               padding-left: 60px;
+               margin-top: 35px;
+               margin-bottom: 75px;
+           }
+    
+       }
+    }
+}
